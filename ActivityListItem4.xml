@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.restaurantfinder.ListItemActivity4">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        app:srcCompat="@drawable/vortex" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Highlights:- Vegetarian Only, Full Bar Available, Live Music, Free Parking, Smoking Area, Club, Live Entertainment, Nightlife, Serves Cocktails, Mobile Chargers On Table, Valet Parking Available, Private Dining Area Available, Wifi, Serves Jain Food, Dance Floor, Live Sports Screening. "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Cuisines:- Asian, Modern Indian, Continental. "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Address:- 116/118, Marine Mansion, 1st Marine Street, Anandilal Podar Marg, Marine Lines, Mumbai. "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Phone number:- 022 30151836 ,Table booking for Groups "
+        android:textColor="@android:color/darker_gray"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/button8"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:text="Call" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button8"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Get Direction"
+        android:onClick="process"/>
+</RelativeLayout>
