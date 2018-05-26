@@ -7,30 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ListItemActivity3 extends AppCompatActivity {
-    Button b6,b7;
+public class ListItemActivity4 extends AppCompatActivity {
+    Button b8,b9;
     private Object view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_item3);
-        b6=(Button)findViewById(R.id.button6);
-        b7=(Button)findViewById(R.id.button7);
-        b6.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_list_item4);
+        b8=(Button)findViewById(R.id.button8);
+        b9=(Button)findViewById(R.id.button9);
+        b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(Intent.ACTION_CALL);
-                i.setData(Uri.parse("tel:02233126809"));
+                i.setData(Uri.parse("tel:02230151836"));
                 startActivity(i);
             }
         });}
         public void process(View view)
         {   Intent intent=null, chooser=null;
-            if (view.getId()==R.id.button7)
+            if (view.getId()==R.id.button9)
             {
                 intent=new Intent(android.content.Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("geo:18.9635136,72.8096289"));
+                intent.setData(Uri.parse("geo:18.9428367,72.8246522"));
                 chooser=Intent.createChooser(intent,"Launch Maps");
                 startActivity(chooser);
             }
